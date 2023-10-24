@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("baf89264-c24d-4251-94ff-b244478f151b",{name:"VanessaEstefaniaRodr"});
+    posthog.capture("report_feature",{karate_version:"1.3.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.pichincha.features.ejercicioAPI.ejercicioApi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-23 11:53:05 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2.1:30]"><span>[2.1:30]</span> <span>T-API-EVA-001-CA2- Consultar Carritos por Fecha</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/pichincha/features/ejercicioAPI/ejercicioApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Consultar Productos del sistema Fake Store</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">REQ_EVA-001</a><a class="badge badge-primary" href="karate-tags.html">Prueba1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:30]</span>
+                <span class="scenario-name">T-API-EVA-001-CA2- Consultar Carritos por Fecha</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1375</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://fakestoreapi.com/products/category/electronics&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.22">11:53:04.191 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1332</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">11:53:04.534 request:
+1 &gt; GET https://fakestoreapi.com/products/category/electronics
+1 &gt; Host: fakestoreapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:53:05.534 response time in milliseconds: 996
+1 &lt; 200
+1 &lt; Date: Mon, 23 Oct 2023 16:53:05 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;e2b-QoauVlMdwav0bbI57A3Xc4mdUEs&quot;
+1 &lt; X-Powered-By: Express
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=w2CriDnZLEtWZ40Yjq7f%2BVktKlBBhY6oonuxOGP%2FyaW%2B%2BcO4nbIOfIIYmJl4Y%2FgFi9MENtvncNimBbwlbN1i4HCbgXuTn88iNwnMegGF%2Bp%2FwX0c9cAVCO5pTUu1cTFbm77T1&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 81ab7e7ddbe9325e-GYE
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:9,&quot;title&quot;:&quot;WD 2TB Elements Portable External Hard Drive - USB 3.0 &quot;,&quot;price&quot;:64,&quot;description&quot;:&quot;USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:3.3,&quot;count&quot;:203}},{&quot;id&quot;:10,&quot;title&quot;:&quot;SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s&quot;,&quot;price&quot;:109,&quot;description&quot;:&quot;Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:2.9,&quot;count&quot;:470}},{&quot;id&quot;:11,&quot;title&quot;:&quot;Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5&quot;,&quot;price&quot;:109,&quot;description&quot;:&quot;3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking &amp; Correction) to provide the optimized performance and enhanced reliability.&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:4.8,&quot;count&quot;:319}},{&quot;id&quot;:12,&quot;title&quot;:&quot;WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive&quot;,&quot;price&quot;:114,&quot;description&quot;:&quot;Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer&#39;s limited warranty&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:4.8,&quot;count&quot;:400}},{&quot;id&quot;:13,&quot;title&quot;:&quot;Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin&quot;,&quot;price&quot;:599,&quot;description&quot;:&quot;21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:2.9,&quot;count&quot;:250}},{&quot;id&quot;:14,&quot;title&quot;:&quot;Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED &quot;,&quot;price&quot;:999.99,&quot;description&quot;:&quot;49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag&quot;,&quot;category&quot;:&quot;electronics&quot;,&quot;image&quot;:&quot;https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg&quot;,&quot;rating&quot;:{&quot;rate&quot;:2.2,&quot;count&quot;:140}}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.25">11:53:05.580 [print] [
+  {
+    &quot;id&quot;: 9,
+    &quot;title&quot;: &quot;WD 2TB Elements Portable External Hard Drive - USB 3.0 &quot;,
+    &quot;price&quot;: 64,
+    &quot;description&quot;: &quot;USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user\u2019s hardware configuration and operating system&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 3.3,
+      &quot;count&quot;: 203
+    }
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;title&quot;: &quot;SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s&quot;,
+    &quot;price&quot;: 109,
+    &quot;description&quot;: &quot;Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5\u201D hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 2.9,
+      &quot;count&quot;: 470
+    }
+  },
+  {
+    &quot;id&quot;: 11,
+    &quot;title&quot;: &quot;Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5&quot;,
+    &quot;price&quot;: 109,
+    &quot;description&quot;: &quot;3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking &amp; Correction) to provide the optimized performance and enhanced reliability.&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 4.8,
+      &quot;count&quot;: 319
+    }
+  },
+  {
+    &quot;id&quot;: 12,
+    &quot;title&quot;: &quot;WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive&quot;,
+    &quot;price&quot;: 114,
+    &quot;description&quot;: &quot;Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer&#39;s limited warranty&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 4.8,
+      &quot;count&quot;: 400
+    }
+  },
+  {
+    &quot;id&quot;: 13,
+    &quot;title&quot;: &quot;Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin&quot;,
+    &quot;price&quot;: 599,
+    &quot;description&quot;: &quot;21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 2.9,
+      &quot;count&quot;: 250
+    }
+  },
+  {
+    &quot;id&quot;: 14,
+    &quot;title&quot;: &quot;Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) \u2013 Super Ultrawide Screen QLED &quot;,
+    &quot;price&quot;: 999.99,
+    &quot;description&quot;: &quot;49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag&quot;,
+    &quot;category&quot;: &quot;electronics&quot;,
+    &quot;image&quot;: &quot;https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg&quot;,
+    &quot;rating&quot;: {
+      &quot;rate&quot;: 2.2,
+      &quot;count&quot;: 140
+    }
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.lenght == 6</span>
+      </div>
+    </div>
+    <div class="time-cell failed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.26">11:53:05.615 src/test/java/com/pichincha/features/ejercicioAPI/ejercicioApi.feature:26
+And match response.lenght == 6
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  &#39;#notpresent&#39;
+  6
+
+src/test/java/com/pichincha/features/ejercicioAPI/ejercicioApi.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

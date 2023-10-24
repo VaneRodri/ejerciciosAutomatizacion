@@ -1,0 +1,3758 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @Agente2</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Banca Movil</td>
+      <td>23 oct. 2023, 19:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Agente2</td>
+          <td      class="passed"    >26</td>
+          <td      class="failed"    >6</td>
+          <td     class="skipped"   >52</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">84</td>
+
+          <td >0</td>
+          <td  class="failed"    >14</td>
+          <td class="total">14</td>
+
+          <td class="duration" data-value="94231934000">1:34.231</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3_2246165733.html">src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_4090000800.html">@test3</a>
+       <a href="report-tag_2748022505.html">@BancaMovil</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_3093686778.html">@PosicionConsolidada</a>
+       <a href="report-tag_2990669630.html">@REQ_PQBP-639</a>
+</div>
+
+
+  <span class="lead-duration duration">39.044</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-API-PQBP-639-CA1- Obtener el detalle de la posicion consolidada - karate</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:55:23.049 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call read('BMLoginBiometrico.feature')</span>
+
+  <span class="lead-duration duration">19.530</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>status</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>18:55:42.625 src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7
+* def result = call read('BMLoginBiometrico.feature')
+status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def user = read('classpath:../BancaMovil/BMloginBiometrico.json')</span>
+
+  <span class="lead-duration duration">0.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">19.406</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>18:55:23.589 request:
+1 &gt; POST https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1835
+1 &gt; Host: app-security-login-biometric-dot-pmovil-app-test.appspot.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;footmark&quot;:{&quot;uniqueId&quot;:&quot;d61ff6e99598e57f&quot;,&quot;brand&quot;:&quot;HUAWEI&quot;,&quot;systemVersion&quot;:&quot;10&quot;,&quot;model&quot;:&quot;TAS-L29&quot;,&quot;carrier&quot;:&quot;&quot;,&quot;readableVersion&quot;:&quot;8.0.0.138&quot;,&quot;epoch&quot;:1649445636372,&quot;ipIspAddress&quot;:&quot;45.173.230.26&quot;,&quot;latitude&quot;:&quot;0&quot;,&quot;longitude&quot;:&quot;0&quot;,&quot;version&quot;:&quot;8.0.0&quot;,&quot;deviceId&quot;:&quot;TAS&quot;,&quot;systemName&quot;:&quot;Android&quot;,&quot;timeZone&quot;:&quot;America\/Guayaquil&quot;,&quot;macAddress&quot;:&quot;76:C6:CD:C1:D1:59&quot;,&quot;messageHeader&quot;:&quot;n\/a&quot;,&quot;photoSize&quot;:&quot;&quot;,&quot;providerId&quot;:&quot;2tBSlTR9ykWqHW0z0zqMsmpnaMsIKhqmxBQTl0mobGDr9QfNPOrW1GiM861FxOUP5Hj4BzYiIUIrxq9u1UP2BdrnqarY4vLjMj0R4LgIilPU94AkPztrekTiJSmPQsfkVSqyenIDm63L6jrJUA8e3RlSASo-zhjppp-PnBPiorN22OkUCjY5G98EiBPmbi1GiA5hiOr48_B3S8Hf2-3ehMgLACNjFUvzfeyfqizWzjq2pcipZRqsmsI6Y6sk6aIYrRPqIQb891Gn9VnLGuPqH7jFej0KAi2ImqHYRRjbnUMCUE5CTiq58HCI_UAzDjS8Ul6miWGYtbGz8QR_nLNgXIiDg-9Pm1mcGByphdWUdWp7Ik0m2xZzGhD5itq_oLeE9DAyMVUl11Z26pkSu9ZSLokfvU245VkDDt0Zo09i8-Hxw9W3RG8PNJeEurCzTQIfqrfNgot8Umi90ac2gv0cDceWZo97CCseXlpC_T6up0lKt99yQUXdh7UDX1qsIDsl&quot;},&quot;footprint&quot;:&quot;d61ff6e99598e57f|HUAWEI|10|TAS-L29||8.0.0.138|1649445636372|45.173.230.26|0|0|8.0.0|TAS|Android|America\/Guayaquil|76:C6:CD:C1:D1:59|n\/a||&quot;,&quot;actualHeader&quot;:{&quot;biometricSessionID&quot;:&quot;b9573defb4e14006a9f33dbac9ca42ec&quot;},&quot;idDevice&quot;:&quot;2qnjyk06HND7YVhQv\/QS6A==&quot;,&quot;user&quot;:{&quot;idAffiliation&quot;:&quot;axVEQAFZGoO6txiOBkHegSgoH7kqMvCuAbSc-cpr73ZVhEzk0PxbOA5_7SMWmjGCghjN5iBsoAEVmtVE5mwPSko5ECPwItvO1eSFStasrjn4gDblDDGS0XY03lcqSyTtW9_Ao1CW7KcWFRcNdKg3t9dnWWNs0ZE-Vc6TCfoGtHRf-vQHeXw-LaA9F_nG9NmtcmSlS9FbbMz1mOnONC7a2L3nL67hyVmvEkOck5h66fTaCMG2Q2hWn7Xp8S1FvkhMtb2varuv3brm3sR668C5p08AfmZsyYMDg5IszRlBVaK8OFOVnNA5t6RK0EhQWwT3hpQD6FiP34ZwSmQhmV_LH25PQ3X4bO_182dQo4IgP-V_bzMmBvvMkrmypKFY5jqWZsAHF9cv8a89Xd3tnM5WQCZq9c8yXzYURRm7zE-5LVkMeDZrDo0eLOhGluhj8jS2nDDiFmVlqlstrhxgBBouarxmzRvGuiMT7vwizlkBP1Vt7ibQDKITfdHBpwoQJKsr&quot;},&quot;firstLogin&quot;:false,&quot;option&quot;:&quot;biometric&quot;,&quot;clientNameRequest&quot;:false,&quot;sessionID&quot;:&quot;b9573defb4e14006a9f33dbac9ca42ec&quot;}
+
+18:55:42.624 response time in milliseconds: 19034
+1 &lt; 500
+1 &lt; Content-Type: application/json
+1 &lt; X-Cloud-Trace-Context: 4ba965b10880e2fe8a0f568234b64102;o=1
+1 &lt; Date: Mon, 23 Oct 2023 23:55:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 183
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then failed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>status</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>18:55:42.625 src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def user = read('classpath:../BancaMovil/BMPosicionConsolidada.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.dniValue = result.response.data.user.dni</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.sessionValue = result.response.data.headerIn.session</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.guidValue = result.response.data.headerIn.guid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://app-transaction-balance-dot-pmovil-app-test.ue.r.appspot.com/app/transaction/balance/v1'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_733221086.html">@CreaTabla</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Crear tabla en la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def resultado = dbMySql.update('CREATE TABLE prueba (col1 int NULL, col2 varchar(100) NULL)')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814994.html">@id:2</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+       <a href="report-tag_2137723740.html">@InsertarRegistro</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1-Insertar un registro en la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def resultado = dbMySql.update('INSERT INTO prueba (col1, col2) VALUES(?,?)',1,'algo')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814995.html">@id:3</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_1415417218.html">@TraerRegistro</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Traer un registro de la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def row = dbMySql.readRow('SELECT * FROM prueba where col1 = 1 ')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">assert row.col2 == 'algo'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814996.html">@id:4</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_3337174298.html">@ReadValue</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Traer un registro de la base MYSQL 2</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def value = dbMySql.readValue('SELECT col2 FROM prueba where col1 = 1 ')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">assert value == 'algo'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_2209814997.html">@id:5</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2174463814.html">@CreateUser</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create User MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def user =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>{
+ &quot;id&quot;: 779,
+ &quot;username&quot;: &quot;Test3QA&quot;,
+ &quot;firstName&quot;: &quot;TestingQA&quot;,
+ &quot;lastName&quot;: &quot;TestingQABP&quot;,
+ &quot;email&quot;: &quot;testing@email.com&quot;,
+ &quot;password&quot;: &quot;123456&quot;,
+ &quot;phone&quot;: &quot;0993200468&quot;,
+ &quot;userStatus&quot;: 0
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Content-Type = 'application/javascript'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header api_key = apiKeyValue</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_9_1145023633.html">src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_2990669652.html">@REQ_PQBP-640</a>
+       <a href="report-tag_2149473155.html">@TCS</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_1866744372.html">@consulta</a>
+       <a href="report-tag_3548340857.html">@consultaValida</a>
+</div>
+
+
+  <span class="lead-duration duration">8.070</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-20">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-API-PQBP-640-CA1- Consulta contacto transaccional WSClientes0007 - karate</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header authorization = 'Basic YmpqYXJhOnBpY2hpbmNoYTE='</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>18:55:25.052 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api-test.pichincha.com/tcs/WSClientes0007'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def user = read('classpath:../TCS/consultaContactoTransaccionalData.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">8.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>18:55:25.059 request:
+1 &gt; POST https://api-test.pichincha.com/tcs/WSClientes0007
+1 &gt; authorization: Basic YmpqYXJhOnBpY2hpbmNoYTE=
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 606
+1 &gt; Host: api-test.pichincha.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ConsultarContactoTransaccional01&quot;:{&quot;headerIn&quot;:{&quot;dispositivo&quot;:&quot;01010101010101010101010101010101010101010101&quot;,&quot;empresa&quot;:&quot;0010&quot;,&quot;canal&quot;:&quot;02&quot;,&quot;medio&quot;:&quot;030006&quot;,&quot;aplicacion&quot;:&quot;00663&quot;,&quot;agencia&quot;:&quot;0012&quot;,&quot;tipoTransaccion&quot;:&quot;201000701&quot;,&quot;geolocalizacion&quot;:&quot;&quot;,&quot;usuario&quot;:&quot;USINTERT&quot;,&quot;unicidad&quot;:&quot;&quot;,&quot;guid&quot;:&quot;3F2504E04F8911D39A0C0305E82C3312&quot;,&quot;fechaHora&quot;:&quot;201902281459012548&quot;,&quot;filler&quot;:&quot;&quot;,&quot;idioma&quot;:&quot;es-EC&quot;,&quot;sesion&quot;:&quot;zxxxxxxssss&quot;,&quot;ip&quot;:&quot;10.0.94.183&quot;,&quot;idCliente&quot;:&quot;1700381799&quot;,&quot;tipoIdCliente&quot;:&quot;001&quot;},&quot;bodyIn&quot;:{&quot;ordenante&quot;:{&quot;identificacion&quot;:&quot;1700381799&quot;,&quot;tipoIdentificacion&quot;:&quot;0001&quot;},&quot;transaccion&quot;:{&quot;tipoTransaccion&quot;:&quot;1700381799&quot;}}}}
+
+18:55:33.123 response time in milliseconds: 8064
+1 &lt; 500
+1 &lt; Date: Mon, 23 Oct 2023 23:55:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Backside-Transport: FAIL FAIL,FAIL FAIL
+1 &lt; X-Global-Transaction-ID: 2f7e3b24653707d6001f8b51
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+          <a>status</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 8064, url: https://api-test.pichincha.com/tcs/WSClientes0007, response: 
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>18:55:33.124 src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 8064, url: https://api-test.pichincha.com/tcs/WSClientes0007, response: 
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.ConsultarContactoTransaccional01Response.error.mensajeNegocio contains 'Transaccion exitosa.'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_12_2246165733.html">src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_4090000800.html">@test3</a>
+       <a href="report-tag_2748022505.html">@BancaMovil</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_3093686778.html">@PosicionConsolidada</a>
+       <a href="report-tag_2990669630.html">@REQ_PQBP-639</a>
+</div>
+
+
+  <span class="lead-duration duration">39.044</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-API-PQBP-639-CA1- Obtener el detalle de la posicion consolidada - karate</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>18:55:23.049 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call read('BMLoginBiometrico.feature')</span>
+
+  <span class="lead-duration duration">19.530</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>status</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>18:55:42.625 src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7
+* def result = call read('BMLoginBiometrico.feature')
+status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+src/test/java/com/pichincha/features/BancaMovil/BMPosicionConsolidada.feature:7
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def user = read('classpath:../BancaMovil/BMloginBiometrico.json')</span>
+
+  <span class="lead-duration duration">0.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">19.406</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>18:55:23.589 request:
+1 &gt; POST https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1835
+1 &gt; Host: app-security-login-biometric-dot-pmovil-app-test.appspot.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;footmark&quot;:{&quot;uniqueId&quot;:&quot;d61ff6e99598e57f&quot;,&quot;brand&quot;:&quot;HUAWEI&quot;,&quot;systemVersion&quot;:&quot;10&quot;,&quot;model&quot;:&quot;TAS-L29&quot;,&quot;carrier&quot;:&quot;&quot;,&quot;readableVersion&quot;:&quot;8.0.0.138&quot;,&quot;epoch&quot;:1649445636372,&quot;ipIspAddress&quot;:&quot;45.173.230.26&quot;,&quot;latitude&quot;:&quot;0&quot;,&quot;longitude&quot;:&quot;0&quot;,&quot;version&quot;:&quot;8.0.0&quot;,&quot;deviceId&quot;:&quot;TAS&quot;,&quot;systemName&quot;:&quot;Android&quot;,&quot;timeZone&quot;:&quot;America\/Guayaquil&quot;,&quot;macAddress&quot;:&quot;76:C6:CD:C1:D1:59&quot;,&quot;messageHeader&quot;:&quot;n\/a&quot;,&quot;photoSize&quot;:&quot;&quot;,&quot;providerId&quot;:&quot;2tBSlTR9ykWqHW0z0zqMsmpnaMsIKhqmxBQTl0mobGDr9QfNPOrW1GiM861FxOUP5Hj4BzYiIUIrxq9u1UP2BdrnqarY4vLjMj0R4LgIilPU94AkPztrekTiJSmPQsfkVSqyenIDm63L6jrJUA8e3RlSASo-zhjppp-PnBPiorN22OkUCjY5G98EiBPmbi1GiA5hiOr48_B3S8Hf2-3ehMgLACNjFUvzfeyfqizWzjq2pcipZRqsmsI6Y6sk6aIYrRPqIQb891Gn9VnLGuPqH7jFej0KAi2ImqHYRRjbnUMCUE5CTiq58HCI_UAzDjS8Ul6miWGYtbGz8QR_nLNgXIiDg-9Pm1mcGByphdWUdWp7Ik0m2xZzGhD5itq_oLeE9DAyMVUl11Z26pkSu9ZSLokfvU245VkDDt0Zo09i8-Hxw9W3RG8PNJeEurCzTQIfqrfNgot8Umi90ac2gv0cDceWZo97CCseXlpC_T6up0lKt99yQUXdh7UDX1qsIDsl&quot;},&quot;footprint&quot;:&quot;d61ff6e99598e57f|HUAWEI|10|TAS-L29||8.0.0.138|1649445636372|45.173.230.26|0|0|8.0.0|TAS|Android|America\/Guayaquil|76:C6:CD:C1:D1:59|n\/a||&quot;,&quot;actualHeader&quot;:{&quot;biometricSessionID&quot;:&quot;b9573defb4e14006a9f33dbac9ca42ec&quot;},&quot;idDevice&quot;:&quot;2qnjyk06HND7YVhQv\/QS6A==&quot;,&quot;user&quot;:{&quot;idAffiliation&quot;:&quot;axVEQAFZGoO6txiOBkHegSgoH7kqMvCuAbSc-cpr73ZVhEzk0PxbOA5_7SMWmjGCghjN5iBsoAEVmtVE5mwPSko5ECPwItvO1eSFStasrjn4gDblDDGS0XY03lcqSyTtW9_Ao1CW7KcWFRcNdKg3t9dnWWNs0ZE-Vc6TCfoGtHRf-vQHeXw-LaA9F_nG9NmtcmSlS9FbbMz1mOnONC7a2L3nL67hyVmvEkOck5h66fTaCMG2Q2hWn7Xp8S1FvkhMtb2varuv3brm3sR668C5p08AfmZsyYMDg5IszRlBVaK8OFOVnNA5t6RK0EhQWwT3hpQD6FiP34ZwSmQhmV_LH25PQ3X4bO_182dQo4IgP-V_bzMmBvvMkrmypKFY5jqWZsAHF9cv8a89Xd3tnM5WQCZq9c8yXzYURRm7zE-5LVkMeDZrDo0eLOhGluhj8jS2nDDiFmVlqlstrhxgBBouarxmzRvGuiMT7vwizlkBP1Vt7ibQDKITfdHBpwoQJKsr&quot;},&quot;firstLogin&quot;:false,&quot;option&quot;:&quot;biometric&quot;,&quot;clientNameRequest&quot;:false,&quot;sessionID&quot;:&quot;b9573defb4e14006a9f33dbac9ca42ec&quot;}
+
+18:55:42.624 response time in milliseconds: 19034
+1 &lt; 500
+1 &lt; Content-Type: application/json
+1 &lt; X-Cloud-Trace-Context: 4ba965b10880e2fe8a0f568234b64102;o=1
+1 &lt; Date: Mon, 23 Oct 2023 23:55:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 183
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then failed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-32">
+          <a>status</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>18:55:42.625 src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 19034, url: https://app-security-login-biometric-dot-pmovil-app-test.appspot.com/app/security/login/biometric/v2, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;BP-4&quot;,&quot;message&quot;:&quot;Existe un inconveniente para ejecutar tu transacci&oacute;n. Por favor intenta m&aacute;s tarde. C&oacute;digo [Bm6]&quot;,&quot;title&quot;:&quot;Ocurri&oacute; un errorTest&quot;},&quot;status&quot;:false}
+src/test/java/com/pichincha/features/BancaMovil/BMLoginBiometrico.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def user = read('classpath:../BancaMovil/BMPosicionConsolidada.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.dniValue = result.response.data.user.dni</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.sessionValue = result.response.data.headerIn.session</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">replace user.guidValue = result.response.data.headerIn.guid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://app-transaction-balance-dot-pmovil-app-test.ue.r.appspot.com/app/transaction/balance/v1'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_733221086.html">@CreaTabla</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-34">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Crear tabla en la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def resultado = dbMySql.update('CREATE TABLE prueba (col1 int NULL, col2 varchar(100) NULL)')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814994.html">@id:2</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+       <a href="report-tag_2137723740.html">@InsertarRegistro</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1-Insertar un registro en la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def resultado = dbMySql.update('INSERT INTO prueba (col1, col2) VALUES(?,?)',1,'algo')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814995.html">@id:3</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_1415417218.html">@TraerRegistro</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Traer un registro de la base MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def row = dbMySql.readRow('SELECT * FROM prueba where col1 = 1 ')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">assert row.col2 == 'algo'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814996.html">@id:4</a>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_3337174298.html">@ReadValue</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-40">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-PQBP-1845-CA1- Traer un registro de la base MYSQL 2</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def value = dbMySql.readValue('SELECT col2 FROM prueba where col1 = 1 ')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">assert value == 'algo'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3249053804.html">src/test/java/com/pichincha/features/DbConnection/MySqlServerExample.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4054548513.html">@MySql</a>
+       <a href="report-tag_2209814997.html">@id:5</a>
+       <a href="report-tag_4288624090.html">@Database</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_2174463814.html">@CreateUser</a>
+       <a href="report-tag_2516301092.html">@REQ_PQBP-1845</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-42">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create User MYSQL</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-42" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-43">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def user =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>{
+ &quot;id&quot;: 779,
+ &quot;username&quot;: &quot;Test3QA&quot;,
+ &quot;firstName&quot;: &quot;TestingQA&quot;,
+ &quot;lastName&quot;: &quot;TestingQABP&quot;,
+ &quot;email&quot;: &quot;testing@email.com&quot;,
+ &quot;password&quot;: &quot;123456&quot;,
+ &quot;phone&quot;: &quot;0993200468&quot;,
+ &quot;userStatus&quot;: 0
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Content-Type = 'application/javascript'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header api_key = apiKeyValue</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_18_1145023633.html">src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209814993.html">@id:1</a>
+       <a href="report-tag_2990669652.html">@REQ_PQBP-640</a>
+       <a href="report-tag_2149473155.html">@TCS</a>
+       <a href="report-tag_2621862353.html">@Agente2</a>
+       <a href="report-tag_1866744372.html">@consulta</a>
+       <a href="report-tag_3548340857.html">@consultaValida</a>
+</div>
+
+
+  <span class="lead-duration duration">8.070</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">T-API-PQBP-640-CA1- Consulta contacto transaccional WSClientes0007 - karate</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-46">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header authorization = 'Basic YmpqYXJhOnBpY2hpbmNoYTE='</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>18:55:25.052 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header content-type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api-test.pichincha.com/tcs/WSClientes0007'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def user = read('classpath:../TCS/consultaContactoTransaccionalData.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request user</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">8.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>18:55:25.059 request:
+1 &gt; POST https://api-test.pichincha.com/tcs/WSClientes0007
+1 &gt; authorization: Basic YmpqYXJhOnBpY2hpbmNoYTE=
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 606
+1 &gt; Host: api-test.pichincha.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ConsultarContactoTransaccional01&quot;:{&quot;headerIn&quot;:{&quot;dispositivo&quot;:&quot;01010101010101010101010101010101010101010101&quot;,&quot;empresa&quot;:&quot;0010&quot;,&quot;canal&quot;:&quot;02&quot;,&quot;medio&quot;:&quot;030006&quot;,&quot;aplicacion&quot;:&quot;00663&quot;,&quot;agencia&quot;:&quot;0012&quot;,&quot;tipoTransaccion&quot;:&quot;201000701&quot;,&quot;geolocalizacion&quot;:&quot;&quot;,&quot;usuario&quot;:&quot;USINTERT&quot;,&quot;unicidad&quot;:&quot;&quot;,&quot;guid&quot;:&quot;3F2504E04F8911D39A0C0305E82C3312&quot;,&quot;fechaHora&quot;:&quot;201902281459012548&quot;,&quot;filler&quot;:&quot;&quot;,&quot;idioma&quot;:&quot;es-EC&quot;,&quot;sesion&quot;:&quot;zxxxxxxssss&quot;,&quot;ip&quot;:&quot;10.0.94.183&quot;,&quot;idCliente&quot;:&quot;1700381799&quot;,&quot;tipoIdCliente&quot;:&quot;001&quot;},&quot;bodyIn&quot;:{&quot;ordenante&quot;:{&quot;identificacion&quot;:&quot;1700381799&quot;,&quot;tipoIdentificacion&quot;:&quot;0001&quot;},&quot;transaccion&quot;:{&quot;tipoTransaccion&quot;:&quot;1700381799&quot;}}}}
+
+18:55:33.123 response time in milliseconds: 8064
+1 &lt; 500
+1 &lt; Date: Mon, 23 Oct 2023 23:55:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Backside-Transport: FAIL FAIL,FAIL FAIL
+1 &lt; X-Global-Transaction-ID: 2f7e3b24653707d6001f8b51
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>status</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>status code was: 500, expected: 200, response time in milliseconds: 8064, url: https://api-test.pichincha.com/tcs/WSClientes0007, response: 
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>18:55:33.124 src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 8064, url: https://api-test.pichincha.com/tcs/WSClientes0007, response: 
+{&quot;error&quot;:{&quot;codigo&quot;:&quot;0x01130006&quot;,&quot;mensaje&quot;:&quot;Failed to establish a backside connection&quot;,&quot;mensajeNegocio&quot;:&quot;Param mensajeNegocio no configurado&quot;,&quot;tipo&quot;:&quot;Param tipoError no configurado&quot;,&quot;recurso&quot;:&quot;Param recurso no configurado&quot;,&quot;componente&quot;:&quot;Param componente no configurado&quot;,&quot;backend&quot;:&quot;Param backend no configurado&quot;}}
+src/test/java/com/pichincha/features/TCS/TCSconsultaContacto.feature:12
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.ConsultarContactoTransaccional01Response.error.mensajeNegocio contains 'Transaccion exitosa.'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

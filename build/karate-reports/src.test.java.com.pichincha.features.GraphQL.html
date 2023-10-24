@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("baf89264-c24d-4251-94ff-b244478f151b",{name:"VanessaEstefaniaRodr"});
+    posthog.capture("report_feature",{karate_version:"1.3.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.pichincha.features.GraphQL</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-23 07:01:38 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Solicitud GraphQL con query embedida - karate</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Solicitud GraphQL con query en archivo JSON - karate</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:27]"><span>[3:27]</span> <span>Solicitud GraphQL con query en archivo JS - karate</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/pichincha/features/GraphQL.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GraphQl Test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">REQ_PQBP-1706</a><a class="badge badge-primary" href="karate-tags.html">id:1</a><a class="badge badge-primary" href="karate-tags.html">ConsultaValidaKarate</a><a class="badge badge-primary" href="karate-tags.html">GraphQL</a><a class="badge badge-primary" href="karate-tags.html">embebida</a><a class="badge badge-primary" href="karate-tags.html">Agente1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Solicitud GraphQL con query embedida - karate</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1068</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:01:36.394 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json queryEmbebido = { &quot;query&quot;: &quot;{ allFilms { totalCount films { title director releaseDate created episodeID }}}&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print queryEmbebido</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:01:36.465 [print] {
+  &quot;query&quot;: &quot;{ allFilms { totalCount films { title director releaseDate created episodeID }}}&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://swapi-graphql.netlify.app/.netlify/functions/index&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request queryEmbebido</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1002</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">19:01:36.624 request:
+1 &gt; POST https://swapi-graphql.netlify.app/.netlify/functions/index
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 92
+1 &gt; Host: swapi-graphql.netlify.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;{ allFilms { totalCount films { title director releaseDate created episodeID }}}&quot;}
+
+19:01:37.467 response time in milliseconds: 842
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 882
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 24 Oct 2023 00:01:36 GMT
+1 &lt; Etag: W/&quot;372-Sy9rOktAv0CNQ5uCveTPP6T96z4&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Nf-Request-Id: 01HDFFS89ZSD357S69TAY5BS2B
+1 &lt; X-Powered-By: Express
+{&quot;data&quot;:{&quot;allFilms&quot;:{&quot;totalCount&quot;:6,&quot;films&quot;:[{&quot;title&quot;:&quot;A New Hope&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1977-05-25&quot;,&quot;created&quot;:&quot;2014-12-10T14:23:31.880000Z&quot;,&quot;episodeID&quot;:4},{&quot;title&quot;:&quot;The Empire Strikes Back&quot;,&quot;director&quot;:&quot;Irvin Kershner&quot;,&quot;releaseDate&quot;:&quot;1980-05-17&quot;,&quot;created&quot;:&quot;2014-12-12T11:26:24.656000Z&quot;,&quot;episodeID&quot;:5},{&quot;title&quot;:&quot;Return of the Jedi&quot;,&quot;director&quot;:&quot;Richard Marquand&quot;,&quot;releaseDate&quot;:&quot;1983-05-25&quot;,&quot;created&quot;:&quot;2014-12-18T10:39:33.255000Z&quot;,&quot;episodeID&quot;:6},{&quot;title&quot;:&quot;The Phantom Menace&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1999-05-19&quot;,&quot;created&quot;:&quot;2014-12-19T16:52:55.740000Z&quot;,&quot;episodeID&quot;:1},{&quot;title&quot;:&quot;Attack of the Clones&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2002-05-16&quot;,&quot;created&quot;:&quot;2014-12-20T10:57:57.886000Z&quot;,&quot;episodeID&quot;:2},{&quot;title&quot;:&quot;Revenge of the Sith&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2005-05-19&quot;,&quot;created&quot;:&quot;2014-12-20T18:49:38.403000Z&quot;,&quot;episodeID&quot;:3}]}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">19:01:37.471 [print] {
+  &quot;data&quot;: {
+    &quot;allFilms&quot;: {
+      &quot;totalCount&quot;: 6,
+      &quot;films&quot;: [
+        {
+          &quot;title&quot;: &quot;A New Hope&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1977-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-10T14:23:31.880000Z&quot;,
+          &quot;episodeID&quot;: 4
+        },
+        {
+          &quot;title&quot;: &quot;The Empire Strikes Back&quot;,
+          &quot;director&quot;: &quot;Irvin Kershner&quot;,
+          &quot;releaseDate&quot;: &quot;1980-05-17&quot;,
+          &quot;created&quot;: &quot;2014-12-12T11:26:24.656000Z&quot;,
+          &quot;episodeID&quot;: 5
+        },
+        {
+          &quot;title&quot;: &quot;Return of the Jedi&quot;,
+          &quot;director&quot;: &quot;Richard Marquand&quot;,
+          &quot;releaseDate&quot;: &quot;1983-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-18T10:39:33.255000Z&quot;,
+          &quot;episodeID&quot;: 6
+        },
+        {
+          &quot;title&quot;: &quot;The Phantom Menace&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1999-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-19T16:52:55.740000Z&quot;,
+          &quot;episodeID&quot;: 1
+        },
+        {
+          &quot;title&quot;: &quot;Attack of the Clones&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2002-05-16&quot;,
+          &quot;created&quot;: &quot;2014-12-20T10:57:57.886000Z&quot;,
+          &quot;episodeID&quot;: 2
+        },
+        {
+          &quot;title&quot;: &quot;Revenge of the Sith&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2005-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-20T18:49:38.403000Z&quot;,
+          &quot;episodeID&quot;: 3
+        }
+      ]
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">REQ_PQBP-1706</a><a class="badge badge-primary" href="karate-tags.html">id:2</a><a class="badge badge-primary" href="karate-tags.html">ConsultaValidaKarate</a><a class="badge badge-primary" href="karate-tags.html">GraphQL</a><a class="badge badge-primary" href="karate-tags.html">json</a><a class="badge badge-primary" href="karate-tags.html">Agente1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Solicitud GraphQL con query en archivo JSON - karate</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1108</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">19:01:36.367 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def queryJSON = read(&#39;classpath:../QueryGraphQL.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print queryJSON</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">19:01:36.466 [print] {
+  &quot;query&quot;: &quot;{ allFilms { totalCount films { title  director  releaseDate  created  episodeID } } }&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://swapi-graphql.netlify.app/.netlify/functions/index&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request queryJSON</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1040</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">19:01:36.626 request:
+1 &gt; POST https://swapi-graphql.netlify.app/.netlify/functions/index
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 98
+1 &gt; Host: swapi-graphql.netlify.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;{ allFilms { totalCount films { title  director  releaseDate  created  episodeID } } }&quot;}
+
+19:01:37.507 response time in milliseconds: 880
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 882
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 24 Oct 2023 00:01:36 GMT
+1 &lt; Etag: W/&quot;372-Sy9rOktAv0CNQ5uCveTPP6T96z4&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Nf-Request-Id: 01HDFFS8A1DM7YZZ8XG4CYVQBW
+1 &lt; X-Powered-By: Express
+{&quot;data&quot;:{&quot;allFilms&quot;:{&quot;totalCount&quot;:6,&quot;films&quot;:[{&quot;title&quot;:&quot;A New Hope&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1977-05-25&quot;,&quot;created&quot;:&quot;2014-12-10T14:23:31.880000Z&quot;,&quot;episodeID&quot;:4},{&quot;title&quot;:&quot;The Empire Strikes Back&quot;,&quot;director&quot;:&quot;Irvin Kershner&quot;,&quot;releaseDate&quot;:&quot;1980-05-17&quot;,&quot;created&quot;:&quot;2014-12-12T11:26:24.656000Z&quot;,&quot;episodeID&quot;:5},{&quot;title&quot;:&quot;Return of the Jedi&quot;,&quot;director&quot;:&quot;Richard Marquand&quot;,&quot;releaseDate&quot;:&quot;1983-05-25&quot;,&quot;created&quot;:&quot;2014-12-18T10:39:33.255000Z&quot;,&quot;episodeID&quot;:6},{&quot;title&quot;:&quot;The Phantom Menace&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1999-05-19&quot;,&quot;created&quot;:&quot;2014-12-19T16:52:55.740000Z&quot;,&quot;episodeID&quot;:1},{&quot;title&quot;:&quot;Attack of the Clones&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2002-05-16&quot;,&quot;created&quot;:&quot;2014-12-20T10:57:57.886000Z&quot;,&quot;episodeID&quot;:2},{&quot;title&quot;:&quot;Revenge of the Sith&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2005-05-19&quot;,&quot;created&quot;:&quot;2014-12-20T18:49:38.403000Z&quot;,&quot;episodeID&quot;:3}]}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">19:01:37.510 [print] {
+  &quot;data&quot;: {
+    &quot;allFilms&quot;: {
+      &quot;totalCount&quot;: 6,
+      &quot;films&quot;: [
+        {
+          &quot;title&quot;: &quot;A New Hope&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1977-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-10T14:23:31.880000Z&quot;,
+          &quot;episodeID&quot;: 4
+        },
+        {
+          &quot;title&quot;: &quot;The Empire Strikes Back&quot;,
+          &quot;director&quot;: &quot;Irvin Kershner&quot;,
+          &quot;releaseDate&quot;: &quot;1980-05-17&quot;,
+          &quot;created&quot;: &quot;2014-12-12T11:26:24.656000Z&quot;,
+          &quot;episodeID&quot;: 5
+        },
+        {
+          &quot;title&quot;: &quot;Return of the Jedi&quot;,
+          &quot;director&quot;: &quot;Richard Marquand&quot;,
+          &quot;releaseDate&quot;: &quot;1983-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-18T10:39:33.255000Z&quot;,
+          &quot;episodeID&quot;: 6
+        },
+        {
+          &quot;title&quot;: &quot;The Phantom Menace&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1999-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-19T16:52:55.740000Z&quot;,
+          &quot;episodeID&quot;: 1
+        },
+        {
+          &quot;title&quot;: &quot;Attack of the Clones&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2002-05-16&quot;,
+          &quot;created&quot;: &quot;2014-12-20T10:57:57.886000Z&quot;,
+          &quot;episodeID&quot;: 2
+        },
+        {
+          &quot;title&quot;: &quot;Revenge of the Sith&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2005-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-20T18:49:38.403000Z&quot;,
+          &quot;episodeID&quot;: 3
+        }
+      ]
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">REQ_PQBP-1706</a><a class="badge badge-primary" href="karate-tags.html">id:3</a><a class="badge badge-primary" href="karate-tags.html">ConsultaValidaKarate</a><a class="badge badge-primary" href="karate-tags.html">jsData</a><a class="badge badge-primary" href="karate-tags.html">GraphQL</a><a class="badge badge-primary" href="karate-tags.html">Agente1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:27]</span>
+                <span class="scenario-name">Solicitud GraphQL con query en archivo JS - karate</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1069</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">19:01:36.391 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json queryJS = call read(&#39;classpath:../QueryGraphQL.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print queryJS</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">19:01:36.445 [print] {
+  &quot;query&quot;: &quot;{\n         allFilms {\n             totalCount\n             films {\n                 title\n                 director\n                 releaseDate\n                 created\n                 episodeID\n             }\n         }\n     }&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://swapi-graphql.netlify.app/.netlify/functions/index&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request queryJS</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1021</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">19:01:36.628 request:
+1 &gt; POST https://swapi-graphql.netlify.app/.netlify/functions/index
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 252
+1 &gt; Host: swapi-graphql.netlify.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;{\n         allFilms {\n             totalCount\n             films {\n                 title\n                 director\n                 releaseDate\n                 created\n                 episodeID\n             }\n         }\n     }&quot;}
+
+19:01:37.468 response time in milliseconds: 838
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 882
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 24 Oct 2023 00:01:36 GMT
+1 &lt; Etag: W/&quot;372-Sy9rOktAv0CNQ5uCveTPP6T96z4&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Nf-Request-Id: 01HDFFS8A19JHQYBP4GHRTXWF2
+1 &lt; X-Powered-By: Express
+{&quot;data&quot;:{&quot;allFilms&quot;:{&quot;totalCount&quot;:6,&quot;films&quot;:[{&quot;title&quot;:&quot;A New Hope&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1977-05-25&quot;,&quot;created&quot;:&quot;2014-12-10T14:23:31.880000Z&quot;,&quot;episodeID&quot;:4},{&quot;title&quot;:&quot;The Empire Strikes Back&quot;,&quot;director&quot;:&quot;Irvin Kershner&quot;,&quot;releaseDate&quot;:&quot;1980-05-17&quot;,&quot;created&quot;:&quot;2014-12-12T11:26:24.656000Z&quot;,&quot;episodeID&quot;:5},{&quot;title&quot;:&quot;Return of the Jedi&quot;,&quot;director&quot;:&quot;Richard Marquand&quot;,&quot;releaseDate&quot;:&quot;1983-05-25&quot;,&quot;created&quot;:&quot;2014-12-18T10:39:33.255000Z&quot;,&quot;episodeID&quot;:6},{&quot;title&quot;:&quot;The Phantom Menace&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;1999-05-19&quot;,&quot;created&quot;:&quot;2014-12-19T16:52:55.740000Z&quot;,&quot;episodeID&quot;:1},{&quot;title&quot;:&quot;Attack of the Clones&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2002-05-16&quot;,&quot;created&quot;:&quot;2014-12-20T10:57:57.886000Z&quot;,&quot;episodeID&quot;:2},{&quot;title&quot;:&quot;Revenge of the Sith&quot;,&quot;director&quot;:&quot;George Lucas&quot;,&quot;releaseDate&quot;:&quot;2005-05-19&quot;,&quot;created&quot;:&quot;2014-12-20T18:49:38.403000Z&quot;,&quot;episodeID&quot;:3}]}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">19:01:37.471 [print] {
+  &quot;data&quot;: {
+    &quot;allFilms&quot;: {
+      &quot;totalCount&quot;: 6,
+      &quot;films&quot;: [
+        {
+          &quot;title&quot;: &quot;A New Hope&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1977-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-10T14:23:31.880000Z&quot;,
+          &quot;episodeID&quot;: 4
+        },
+        {
+          &quot;title&quot;: &quot;The Empire Strikes Back&quot;,
+          &quot;director&quot;: &quot;Irvin Kershner&quot;,
+          &quot;releaseDate&quot;: &quot;1980-05-17&quot;,
+          &quot;created&quot;: &quot;2014-12-12T11:26:24.656000Z&quot;,
+          &quot;episodeID&quot;: 5
+        },
+        {
+          &quot;title&quot;: &quot;Return of the Jedi&quot;,
+          &quot;director&quot;: &quot;Richard Marquand&quot;,
+          &quot;releaseDate&quot;: &quot;1983-05-25&quot;,
+          &quot;created&quot;: &quot;2014-12-18T10:39:33.255000Z&quot;,
+          &quot;episodeID&quot;: 6
+        },
+        {
+          &quot;title&quot;: &quot;The Phantom Menace&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;1999-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-19T16:52:55.740000Z&quot;,
+          &quot;episodeID&quot;: 1
+        },
+        {
+          &quot;title&quot;: &quot;Attack of the Clones&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2002-05-16&quot;,
+          &quot;created&quot;: &quot;2014-12-20T10:57:57.886000Z&quot;,
+          &quot;episodeID&quot;: 2
+        },
+        {
+          &quot;title&quot;: &quot;Revenge of the Sith&quot;,
+          &quot;director&quot;: &quot;George Lucas&quot;,
+          &quot;releaseDate&quot;: &quot;2005-05-19&quot;,
+          &quot;created&quot;: &quot;2014-12-20T18:49:38.403000Z&quot;,
+          &quot;episodeID&quot;: 3
+        }
+      ]
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
